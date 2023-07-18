@@ -21,28 +21,6 @@ $(document).ready(function () {
             }
         }
     });
-
-    $('.products').owlCarousel({
-        items: 7,
-        loop: true,//show the first item again after the last item
-        margin: 30, //margin between to carousel items
-        nav: true,
-        autoplay:true,  //auto scroll
-        autoplayTimeout:2000, // auto scroll time
-        stagePadding:80, //portions of items from left and right
-        dots:true, 
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
-    });
 });
 
 var swiper = new Swiper(".slide-content", {
@@ -59,6 +37,7 @@ var swiper = new Swiper(".slide-content", {
       scale:4,
       slideShadow:true,
       effect:'overflow',
+      
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -73,10 +52,12 @@ var swiper = new Swiper(".slide-content", {
 
     breakpoints:{
         0:{
-            slidesPerView:1,
+            slidesPerView:1.4,
+            centeredSlides : true,  
         },
         520:{
             slidesPerView:2,
+            centeredSlides : true, 
         },
         850:{
             slidesPerView:3,
@@ -86,7 +67,7 @@ var swiper = new Swiper(".slide-content", {
         },
     },
     autoplay: {
-        delay: 2000,
+        delay: 1500,
       },
     // effect: 'coverflow',
     // grabCursor: true,
@@ -121,3 +102,28 @@ var swiper = new Swiper(".slide-content", {
       },
   });
   
+  var mySwiper = new Swiper('.swiper-container-offers', {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 3000,
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+})
