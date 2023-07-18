@@ -20,8 +20,42 @@ body{
 
 /* About Us section style  */
 .aboutUs{
-  height: 400px;
+  padding-top: 30px;
+  padding-bottom: 55px;
   background-color:rgba(13, 197, 90, 0.096);
+}
+.aboutUs .contaier .row h1{
+  font-weight: 900;
+  color: #beac05;
+}
+
+
+.aboutUs .contaier .row div div{
+  border-radius: 15px;
+ padding-top: 10px;
+  margin: 4px;
+  height: 200px; 
+  box-shadow: 20px 20px 50px rgb(128, 128, 128);
+}
+
+
+.aboutUs .contaier .row div div p{
+  color: #000;
+  padding: 10px;
+}
+
+@media screen and (max-width: 990px){
+  .aboutUs .contaier .row div div{
+    height: 130px; 
+  }
+}
+
+
+@media screen and (max-width: 798px){
+  .aboutUs .contaier .row div div{
+    margin: 8px 0px;
+    height: 200px; 
+  }
 }
 
 /* Special offers section style  */
