@@ -18,6 +18,20 @@ body{
     height: 370px;
 }
 
+/* About Us section style  */
+.aboutUs{
+  height: 400px;
+  background-color:rgba(13, 197, 90, 0.096);
+}
+
+/* Special offers section style  */
+.special-offers{
+  height: 400px;
+
+}
+
+
+
 /* product Slider Style */
 
 .slide-container{
@@ -132,6 +146,100 @@ body{
   
 }
 
+/* testimonials section style  */
+/* .testimonials{
+  height: 400px;
+  background-color: #707070;
+} */
+.testimonials {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe92418;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: #19875459;
+}
+.swiper-pagination-bullet-active {
+  background-color: #198754;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .testimonials .nav-btn {
+    display: none;
+  }
+}
+
+
 
 /* Footer Styling bootstrap */
 
@@ -173,4 +281,9 @@ body{
 
 
   }
-  
+  @media screen and (max-width: 768px) {
+  .site-footer .row ul li{
+    display: block;
+
+  }
+}

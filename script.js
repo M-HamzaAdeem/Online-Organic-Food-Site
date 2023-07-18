@@ -52,10 +52,19 @@ var swiper = new Swiper(".slide-content", {
     centerSlide:'true',
     fade:'true',
     grabCursor:'true',
+    speed:1000,
+    depth:200,
+      modifier:4,
+      rotate:100,
+      scale:4,
+      slideShadow:true,
+      effect:'overflow',
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
       dynamicBullets:'true',
+      speed:1000,
+      
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -75,5 +84,40 @@ var swiper = new Swiper(".slide-content", {
         1150:{
             slidesPerView:4,
         },
-    }
+    },
+    autoplay: {
+        delay: 2000,
+      },
+    // effect: 'coverflow',
+    // grabCursor: true,
+    // centeredSlides: true,
+    // slidesPerView: 'auto',
+    // coverflowEffect: {
+    //     rotate: 0,
+    //     stretch: 80,
+    //     depth: 200,
+    //     modifier: 1,
+    //     slideShadows: false,
+    // },
+      
   });
+
+  
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 4000,
+      },
+  });
+  
