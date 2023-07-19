@@ -9,20 +9,33 @@ body{
   /* display: flex; */
   justify-content: center;
   align-items: center;
-  background-color: #efefef;
+  background-color: #ebe7e7;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 .navbar-brand img{
   height: 50px;
 }
 .cover-img{
     height: 370px;
+    
+    
 }
 
+.navbar{
+  width: 100vw; 
+ 
+}
+#main-slideshow{
+  width: 100vw; 
+}
 /* About Us section style  */
-.aboutUs{
+#aboutUs{
   padding-top: 30px;
   padding-bottom: 55px;
   background-color:rgba(13, 197, 90, 0.096);
+  width: 100vw; 
 }
 .aboutUs .container .row h1{
   font-weight: 900;
@@ -59,12 +72,13 @@ body{
 }
 
 
-.special-offers .swiper-container {
-width:98vw;
+#special-offers .swiper-container-offers {
+width: 100vw; 
 padding-top: 50px;
 padding-bottom: 50px;
+overflow: hidden;
 }
-.special-offers .swiper-slide{
+#special-offers .swiper-slide{
   margin: 50px;
   height: 480;
 width: 500px;
@@ -73,9 +87,13 @@ box-shadow: 20px 20px 50px rgb(128, 128, 128);
 display: flex;
 align-items: center;
 align-self: center;
-
-
 }
+@media screen and (max-width: 768px){
+  #special-offers .swiper-slide{
+  width: 300px;
+  }
+}
+
 
 .blink-hard {
 animation: blinker 1s step-end infinite;
@@ -89,17 +107,20 @@ animation: blinker 1s step-end infinite;
 
 
 /* product Slider Style */
+#products{
+  width: 100vw; 
+  
 
+}
 .slide-container{
   /* width: 1120px; */
   /* max-width: 1120px; */
   width: 100%;
   background-color: rgba(13, 197, 90, 0.096);
-  padding: 40px 0;
 
 }
 .slide-content{
-  margin: 0 40px;
+  margin: 40px;
   overflow: hidden;
 
 }
@@ -170,6 +191,7 @@ animation: blinker 1s step-end infinite;
 .swiper-nav{
   color: #19875473;
   transition: color 0.3s ease;
+
 }
 .swiper-nav:hover{
   color: #198754;
@@ -178,10 +200,10 @@ animation: blinker 1s step-end infinite;
   font-size: 40px;   
 }
 .swiper-button-next {
-  right: 0;
+  right: 5px;
 }
 .swiper-button-prev {
-  left: 0;
+  left: 5px;
 }
 .swiper-pagination-bullet {
   background-color: #19875465;
@@ -193,7 +215,7 @@ animation: blinker 1s step-end infinite;
 }
 @media screen and (max-width: 768px){
   .slide-content{
-      margin: 0 10px;
+      margin: 20px 10px;
   }
   .swiper-nav{
       display: none;
@@ -207,7 +229,7 @@ animation: blinker 1s step-end infinite;
   height: 400px;
   background-color: #707070;
 } */
-.testimonials {
+#testimonials {
   height: 500px;
   width: 100%;
   display: flex;
@@ -290,7 +312,7 @@ animation: blinker 1s step-end infinite;
   .slide p {
     padding: 0 20px;
   }
-  .testimonials .nav-btn {
+  #testimonials .nav-btn {
     display: none;
   }
 }

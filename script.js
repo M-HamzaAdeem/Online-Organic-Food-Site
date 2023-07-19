@@ -127,3 +127,9 @@ var swiper = new Swiper(".slide-content", {
     },
 
 })
+
+var typing=new Typed(".text", {
+    cursorChar: '',
+    strings: ["Shahi Desi Ghee is a local organic food brand in Pakistan. We are dedicated to offering the highest quality products that bring joy to your table. Our journey started with a belief in the power of natural and locally sourced ingredients, and we remain committed to this philosophy in everything we create."],
+    typeSpeed: 20,
+});
