@@ -30,6 +30,12 @@ body{
 #main-slideshow{
   width: 100vw; 
 }
+
+.section-heading{
+  color: #198754;
+  font-weight:900;
+  /* margin-bottom: 30px; */
+}
 /* About Us section style  */
 #aboutUs{
   padding-top: 30px;
@@ -45,12 +51,13 @@ body{
 /* special offers section  */
 #special-offers .swiper-container-offers {
 width: 100vw; 
-padding-top: 50px;
+padding-top: 40px;
 padding-bottom: 50px;
 overflow: hidden;
+background-color: #ffe92418;
 }
 #special-offers .swiper-slide{
-  margin: 50px;
+  margin: 0px;
   height: 480;
 width: 500px;
 border-radius: 20px; 
@@ -80,14 +87,16 @@ animation: blinker 1s step-end infinite;
 /* product Slider Style */
 #products{
   width: 100vw; 
-  
+  height: 580px;
+  background-color: rgba(13, 197, 90, 0.096);
+  padding: 55px 0px;
 
 }
 .slide-container{
   /* width: 1120px; */
   /* max-width: 1120px; */
   width: 100%;
-  background-color: rgba(13, 197, 90, 0.096);
+  /* background-color: rgba(13, 197, 90, 0.096); */
 
 }
 .slide-content{
@@ -153,7 +162,13 @@ animation: blinker 1s step-end infinite;
   font-size: larger;
   font-weight: 500;
   color: #333;
+  margin: 20px;
 }
+
+.card-content {
+height: 180px;
+}
+
 .card-content .product-discription{
   font-size: 14ox;
   color: #707070;
@@ -210,7 +225,7 @@ animation: blinker 1s step-end infinite;
 }
 .testimonial {
   position: relative;
-  max-width: 900px;
+  max-width: 700px;
   width: 100%;
   padding: 50px 0;
   overflow: hidden;
@@ -229,13 +244,21 @@ animation: blinker 1s step-end infinite;
   row-gap: 30px;
   height: 100%;
   width: 100%;
+  margin: 0 auto;
 }
-.slide p {
+.slide p{
   text-align: center;
-  padding: 0 160px;
+  padding-left: 100px;
+  padding-right: 150px;
   font-size: 14px;
   font-weight: 400;
   color: #333;
+}
+
+.slide img {
+  
+  margin-left: 100px;
+  margin-right: 150px;
 }
 .slide .quote-icon {
   font-size: 30px;
@@ -245,6 +268,7 @@ animation: blinker 1s step-end infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .details .name {
   font-size: 14px;
@@ -264,6 +288,7 @@ animation: blinker 1s step-end infinite;
   transform: translateY(30px);
   background-color: rgba(0, 0, 0, 0.1);
   transition: 0.2s;
+
 }
 .nav-btn:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -281,7 +306,8 @@ animation: blinker 1s step-end infinite;
 }
 @media screen and (max-width: 768px) {
   .slide p {
-    padding: 0 20px;
+    padding-left:50px;
+    padding-right: 65px;
   }
   #testimonials .nav-btn {
     display: none;
