@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 });
 
-var swiper = new Swiper(".slide-content", {
+var swiper = new Swiper(".slide-content-products", {
     // slidesPerView: 5,
     spaceBetween: 25,
     loop: true,
