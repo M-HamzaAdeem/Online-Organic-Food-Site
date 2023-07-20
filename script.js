@@ -1,27 +1,14 @@
-$(document).ready(function () {
-    $('.slider').owlCarousel({
-        items: 1,
-        loop: true,//show the first item again after the last item
-        margin: 1, //margin between to carousel items
-        nav: false,
-        autoplay:true,  //auto scroll
-        autoplayTimeout:4000, // auto scroll time
-        stagePadding:0, //portions of items from left and right
-        dots:false,
-        animateOut: 'fadeOut',
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-});
+
+
+var mySwiper = new Swiper('.swiper-container', {
+    autoplay: {
+    delay: 5000,
+    },
+    direction: 'horizontal',
+  effect: 'fade',
+  loop: true,
+  speed: 1000,
+  })
 
 var swiper = new Swiper(".slide-content-products", {
     // slidesPerView: 5,
@@ -56,7 +43,7 @@ var swiper = new Swiper(".slide-content-products", {
             centeredSlides : true,  
         },
         520:{
-            slidesPerView:2,
+            slidesPerView:1.6,
             centeredSlides : true, 
         },
         850:{
@@ -69,17 +56,7 @@ var swiper = new Swiper(".slide-content-products", {
     autoplay: {
         delay: 1500,
       },
-    // effect: 'coverflow',
-    // grabCursor: true,
-    // centeredSlides: true,
-    // slidesPerView: 'auto',
-    // coverflowEffect: {
-    //     rotate: 0,
-    //     stretch: 80,
-    //     depth: 200,
-    //     modifier: 1,
-    //     slideShadows: false,
-    // },
+
       
   });
 

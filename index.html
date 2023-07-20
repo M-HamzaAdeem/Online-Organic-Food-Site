@@ -5,23 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shahi Dasi Ghee</title>
+    <link rel="icon" type="image/x-icon" href="shahi-desi-ghee.ico">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Montserrat:wght@100;300;400;900&family=Poppins:wght@100;300;400;700;900&family=Ubuntu&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Caveat:wght@700&family=Tektur:wght@600&family=Montserrat:wght@100;300;400;900&family=Poppins:wght@100;300;400;700;900&family=Ubuntu&display=swap"
         rel="stylesheet">
 
     <!-- StyleSheets -->
-
-    <!-- Owl Corosed cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Animation On slide AOS cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -63,9 +55,9 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
+                    <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+                        <ul class="navbar-nav  mb-2 mb-lg-0">
+                            <li class="nav-item ">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
@@ -90,25 +82,23 @@
         </header>
     </section>
 
-    <!-- slideshow -->
-    <section id="main-slideshow">
-        <div class="owl-carousel slider owl-theme ">
-            <div class="item">
-                <img class="cover-img" src="desi ghee cover1.jpg" alt="Desi ghee and honey">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-container a" style="background-image: url('organic-food-cover.jpg')";></div>
             </div>
-            <div class="item">
-                <img class="cover-img" src="desi ghee cover2.jpg" alt="Desi ghee and honey">
+            <div class="swiper-slide">
+                <div class="image-container b" style="background-image: url('organic-food-cover-1.jpg');"></div>
             </div>
-            <div class="item">
-                <img class="cover-img" src="desi ghee cover1.jpg" alt="Desi ghee and honey">
+            <div class="swiper-slide">
+                <div class="image-container a" style="background-image: url('organic-food-cover-3.jpg');"></div>
             </div>
-            <div class="item">
-                <img class="cover-img" src="desi ghee cover2.jpg" alt="Desi ghee and honey">
+            <div class="swiper-slide">
+                <div class="image-container b" style="background-image: url('organic-food-cover-2.jpg');"></div>
             </div>
         </div>
-    </section>
+    </div>
 
-    
 
         <!-- Abiut us setion -->
     <section id="aboutUs" >
@@ -209,6 +199,7 @@
     </section>
 
     <!-- Products section  -->
+   
 
     <section id="products">
         <div class="slide-container  swiper">
@@ -216,9 +207,12 @@
             <div class="slide-content-products">
                 <div class="card-wrapper swiper-wrapper">
                     <!-- Product 1 -->
+                    
                     <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay bg-success"></span>
+                        <div class="image-content" style="overflow: hidden;">
+                            <span class="overlay bg-success" > <div class="product">
+                                <span class="new bg-warning "><span>H o t</span></span>
+                              </div></span>
                             <div class="card-image">
                                 <img src="product-ghee.jpg" alt="Desi Ghee" class="card-img">
                             </div>
@@ -508,17 +502,6 @@
             <i class="fa fa-comment fa-xl fa-stack-1x fa-inverse my-float"></i>
             </a>
     <!-- Scripts -->
-
-    <!-- JQuery Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Owl Carousel script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <!-- Animation On slide AOS cdn --> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> // this can we added to script file
