@@ -48,11 +48,11 @@ body{
 
 /* slideshow section style  */
 .swiper-container {
-	bottom: 0;
+	/* bottom: 0;
 	left: 0;
 	position: absolute;
-	right: -25px;
-	top: 60px;
+	right: 0px;
+	top: 60px; */
     height: 400px;
     overflow: hidden;
 	
@@ -90,7 +90,7 @@ body{
 }
 /* About Us section style  */
 #aboutUs{
-  padding-top: 430px;
+  padding-top: 30px;
   padding-bottom: 55px;
   background-color:rgba(13, 197, 90, 0.096);
   width: 100vw; 
@@ -99,9 +99,9 @@ body{
 .h-sticker{ 
   height: 180px; 
   overflow: hidden;
-  background-image: url("aboutus-card1.avif");
+  background-image: url("aboutus-card.jpg");
   background-repeat: no-repeat;
-
+ background-size: cover;
 
 }
 /* special offers section  */
